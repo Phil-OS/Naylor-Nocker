@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <AssemblyName>naylor-nocker</AssemblyName>
+    <RootNamespace>NaylorNocker.Service</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.14" />
+    <ProjectReference Include="../NaylorNocker.Core/NaylorNocker.Core.csproj" />
+    <ProjectReference Include="../NaylorNocker.Windows/NaylorNocker.Windows.csproj" />
+    <InternalsVisibleTo Include="NaylorNocker.Service.Tests" />
+  </ItemGroup>
+</Project>
